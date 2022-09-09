@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public  void Main()
+	{	
+		int target = 18;
+		int [] nums = new int[4];
+		nums[0] = 2;
+		nums[1] = 7;
+		nums[2] = 11;
+		nums[3] = 15;
+		SumaDos(nums,target);
+		
+	}
+	public void SumaDos(int [] nums, int target)
+	{
+		int suma = 0;
+		
+		for(int i=0;i<3;i++)
+		{
+			suma = nums[i] + nums[i+1];
+			if (suma == target)
+			{
+			 Console.WriteLine(i);
+			 Console.WriteLine(i+1);
+			}
+					
+		}
+	}
+}
